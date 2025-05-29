@@ -263,6 +263,8 @@ footer {
 @media screen and (max-width: 1000px) {
     .cat-article {
         flex-direction: column;
+        width: 70%;
+        margin: 0 auto 30px auto;
     }
 
     .cat-text {
