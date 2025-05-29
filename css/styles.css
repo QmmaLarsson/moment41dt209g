@@ -217,6 +217,13 @@ button:hover {
     text-decoration: underline;
 }
 
+/*Regler för nyheter på små skärmar*/
+@media screen and (max-width: 700px) {
+    .news-article {
+        width: 70%;
+    }
+}
+
 /*Regler för footer*/
 footer {
     background-color: #e7d8b9;
@@ -269,6 +276,37 @@ footer {
 }
 
 /*Regler för sidan news*/
+.news-page {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.news-page-container {
+    flex: 3;
+}
+
+.news-menu {
+    flex: 1;
+}
+
+.news-menu ul {
+    list-style: none;
+}
+
+.news-menu li {
+    margin-bottom: 15px;
+}
+
+.news-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.news-menu a:hover {
+    text-decoration: underline;
+}
+
 .news-page-article {
     background-color: white;
     padding: 15px;
@@ -307,6 +345,34 @@ footer {
 
 .news-page-article a:hover {
     text-decoration: underline;
+}
+
+/*Regler för sidan news på liten skärm*/
+@media screen and (max-width: 700px) {
+    .news-page {
+        flex-direction: column;
+    }
+
+    .news-menu {
+        display: none;
+    }
+
+    .news-page-article h3 {
+        text-align: center;
+    }
+
+    .news-page-article {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 70%;
+        margin: 0 auto 30px auto;
+    }
+
+    .news-page-article img,
+    .news-page-text {
+        width: 100%;
+    }
 }
 
 /*Regler för sidan news-article*/
