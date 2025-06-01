@@ -415,8 +415,7 @@ form textarea {
     box-sizing: border-box;
 }
 
-form input[type="submit"],
-form input[type="reset"] {
+form input[type="submit"] {
     background-color: #e78836;
     color: white;
     border: none;
@@ -426,11 +425,6 @@ form input[type="reset"] {
     margin-right: 10px;
 }
 
-form input[type="submit"]:hover,
-form input[type="reset"]:hover {
+form input[type="submit"]:hover {
     background-color: #cf6f1d;
-}
-
-form input[type="reset"] {
-    margin-bottom: 10px;
 }
